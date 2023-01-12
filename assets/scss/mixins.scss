@@ -1,0 +1,11 @@
+@mixin color($color: blue) {
+    color: $color;
+}
+
+@mixin bgColor($bgColor: grey) {
+    background-color: $bgColor;
+}
+
+@mixin borderRadius($radius: 8px) {
+    border-radius: $radius;
+}

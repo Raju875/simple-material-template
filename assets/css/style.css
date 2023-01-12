@@ -10,8 +10,18 @@ section {
   width: 90%;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 5px;
   background-color: #d1d1d1;
+  border-radius: 8px;
+}
+
+img, .card .card-image img {
+  border-radius: 8px;
+}
+
+.card {
+  border-radius: 8px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,15 +1,28 @@
+@import "index";
+
 * {
   font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
-
 h2 {
-  color: #f44336;
+  @include color($hColor);
 }
-
 section {
   width: 90%;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 5px;
-  background-color: #d1d1d1;
+  @include bgColor($sectionBgColor);
+  @include borderRadius($imageRadius);
+}
+img {
+  @include borderRadius($imageRadius);
+}
+.card {
+  @include borderRadius($cardRadius);
+  .card-image {
+    img {
+      @extend img;
+    }
+  }
 }
